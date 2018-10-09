@@ -1,0 +1,188 @@
+body,
+html {
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+
+
+
+#at-plus-container {
+    position: relative;
+    width: 180px;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+#bottom-positioner {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+#info-bar {
+    position: absolute;
+    width: 26px;
+    height: 26px;
+    left: 77px;
+    bottom: 92px;
+    border-radius: 50%;
+    background-color: #7E7E7E;
+    transition: all 0.5s;
+    opacity: 0;
+}
+
+#button:hover #info-bar {
+    width: 130px;
+    height: 130px;
+    left: 25px;
+    bottom: 135px;
+    opacity: 1;
+}
+
+#info-bar ul {
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+}
+
+#info-bar li {
+    list-style: none;
+    width: 100%;
+    text-align: center;
+    margin-top: 6px;
+    margin-bottom: 0px;
+    margin-left: 0;
+    color: white;
+}
+
+#info-bar li img {
+    vertical-align: middle;
+}
+
+#info-bar li span {
+    margin-left: 8px;
+}
+
+#info-bar li.mine {
+    display: inline-block;
+    width: 50%;
+    color: #079E6E;
+    box-sizing: border-box;
+}
+
+#info-bar li.posted {
+    padding-left: 15px;
+}
+
+#info-bar li.comment {
+    font-size: 30px;
+}
+
+#control-ring-container {
+    position: absolute;
+    width: 180px;
+    height: 180px;
+    bottom: 20px;
+    left: 0;
+    border-radius: 50%;
+}
+
+#button {
+    width: 70px;
+    height: 70px;
+    margin: 75px 55px;
+}
+
+#button .apb {
+    position: absolute;
+    border-radius: 50%;
+    width: 26px;
+    height: 26px;
+    left: 77px;
+    bottom: 92px;
+    background: url('assets/images/atplus_white.png') center no-repeat;
+    background-size: 20px 15px;
+    background-color: #989FCF;
+    transition: all 0.5s;
+}
+
+#button:hover .apb {
+    width: 50px;
+    height: 50px;
+    left: 65px;
+    bottom: 80px;
+    background: url('assets/images/atplus_green.png') center no-repeat;
+    background-size: 37px 27px;
+    background-color: rgba(48, 63, 159, 1);
+}
+
+#control-ring-container li {
+    position: absolute;
+    list-style: none;
+    display: block;
+    width: 26px;
+    height: 26px;
+    border-radius: 50%;
+    margin-top: 60px;
+    margin-left: 35px;
+    background: #686868 center no-repeat;
+    background-size: 18px 18px;
+    transition: all 0.5s;
+    opacity: 0;
+}
+
+#button:hover #control-ring li {
+    opacity: 1;
+}
+
+#button:hover #control-ring li:nth-child(1) {
+    margin-top: 29px;
+    margin-left: -35px;
+    background-image: url('assets/images/nomask.png')
+}
+
+#button:hover #control-ring li:nth-child(2) {
+    margin-top: 69px;
+    margin-left: -39px;
+    background-image: url('assets/images/history.png')
+}
+
+#button:hover #control-ring li:nth-child(3) {
+    margin-top: 105px;
+    margin-left: -23px;
+    background-image: url('assets/images/message.png')
+}
+
+#button:hover #control-ring li:nth-child(4) {
+    margin-top: 130px;
+    margin-left: 12px;
+    background-image: url('assets/images/setting.png')
+}
+
+#button:hover #control-ring li:nth-child(5) {
+    margin-top: 129px;
+    margin-left: 55px;
+    background-image: url('assets/images/signin.png')
+}
+
+#control-ring li span.unread {
+    position: absolute;
+    top: -5px;
+    right: -10px;
+    display: block;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: red;
+    color: #E0D6DC;
+    box-sizing: border-box;
+    padding-top: 1px;
+    padding-left: 6px;
+    font-size: 13px;
+    font-weight: bold;
+}
